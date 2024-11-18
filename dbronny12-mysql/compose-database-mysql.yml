@@ -1,0 +1,19 @@
+version: "1"
+
+services:
+  mysql:
+    image: mysql:8.0.26
+    container_name: dbronnu12-mysql
+    restart: always
+    environment:
+    - MYSQL_ROOT_PASSWORD=Unu#2024
+    ports:
+    - 3380:3306
+    - 33081:33060
+    networks:
+    - td2024 
+    
+networks:
+  td2024:
+    name: ms-unu1-2024
+
